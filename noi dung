@@ -1,0 +1,100 @@
+console.log(10)          hiển thi ra đối tượng cần kiểm tra của mình dưới terminal 
+
+node ten file            để chạy 1 file js  
+                         lưu ý phải chạy đúng đường dẫn   
+
+cd ../                   dùng để back ra khỏi đường dẫn hiện tại 
+
+\n                      là xuống dòng 
+ 
+cách 2: là anh em chuột phải vào file index.js sau đấy kích vào open in Integrated terminal  => thì nó sẽ cho mình một cái terminal có đúng đường dẫn luôn 
+
+
+
+---- Nội dung tiếp theo là các cái kiểu dữ liệu và các cái biến trong javascript  
+
+thì để khai báo một cái biến trong javascript thì anh em sẽ dùng cho mình cái từ khóa là:  var viết tắt   ( variable)
+
+var tenBien = giá trị   khai báo biến 
+                        tên biến bắt đầu bằng chữ    
+
+kiểu number
+
+kiểu string                phải bọc trong ngoặc '' , ""  - khai báo string trên một dòng 
+
+=> phải có 2 dấu nháy khác nhau để phân biển string và cái đoạn trích bên trong 
+
+nháy huyền ``         cho phép viết string trên nhiều dòng, để có thể được xuống dòng trong string 
+
+ví dụ: 
+
+var number = 15;
+
+console.log(number);
+
+
+var firstName =  "Lê Hùng";
+
+console.log(firstName);
+
+
+
+
+typeof             trong javascript có một cái lệnh để  kiểm tra kiểu dữ liệu của một cái biến  
+
+ví dụ: 
+
+var firstName = "Lê Hùng";
+
+console.log(typeof firstName)
+
+=========================================================================================================================================================================================================================
+
+kiểu array                sẽ bắt đầu bọc trong dấu ngoặc [], và bên trong arr có thể chứa được nhiều kiểu dữ liệu , chữ , số , tên biến , và thập chí nó có thể chứa một cái arr khác => array đa năng hơn 
+
+                          trong arr các phần tử được phân cách nhau ở dấu phẩy , 
+                          các phần tử trong array được đánh thứ tự từ 0
+ array[index]             xem phần tử thứ index trong array 
+
+
+ array.length             trả về độ dài của arr   
+
+
+ví dụ: 
+var arrTest = ['text', 999, firstName, [2,8,9]];
+// số tứ tự đánh dấu từ 0 
+// đếm phần tử từ 1 
+// vị trí của phần tử cuối cùng sẽ luôn = length-1 ví dụ: console.log("vitricuoi::::",arrTest[arrTest.length -1 ]);
+// muốn xem phần tử bên trong thằng con này: console.log("vitricuoi::::",arrTest[arrTest.length -1 ][0]);
+console.log(arrTest);
+
+================================================================================================================
+
+kiểu về object :         được bọc trong cặp ngoặc nhọn được thể hiện theo cặp key: value
+
+                         cũng như arr trong object có   thể chứa nhiều kiểu dữ liệu như string , số , array 
+
+
+object['key']           xem các trường bên trong object 
+                        có thể xem nội dung bằng biến 
+
+object.key              xem các trường bên trong  object 
+                        không thể dùng biến để xem nội dung 
+
+
+
+ví dụ:                               
+
+
+
+var objectStudent = {
+    id: "0909090",
+    hoTen: "alex",
+    phoneNumber: 090900,
+    friend: ["quy", "phu", "son" ],
+    gioiThieu: "info",
+    giaDinh: {diaChi: "Hà Nội", phuongTien: "xe may"}
+}
+console.log(objectStudent['friend']);
+
+console.log(objectStudent.giaDinh); // ,muốn xem tên 
